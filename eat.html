@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Where to Eat</title>
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <a class="homelink" href="index.html">
+        <h1>Pleasure Island</h1>
+        <h2>Carolina & Kure Beach, NC</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a class="active" href="eat.html">Where to Eat</a></li>
+          <li><a href="play.html">Where to Play</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="business.html">Local Business</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+      <div class="hamburger-menu">
+        <a href="eat.html" class="active">Where to Eat</a>
+        <div id="hamburger-menu-links">
+          <a href="index.html">Home</a>
+          <a href="play.html">Where to Play</a>
+          <a href="stay.html">Where to Stay</a>
+          <a href="business.html">Local Businesses</a>
+          <a href="events.html">Events</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="eat-main">
+      <h2 class="main-title">Where to Eat</h2>
+      <img class="main-img" src="images/beach_restaurant_1920w.jpg" alt="restaurant on the beach">
+      <article class="main-article">
+        <h3>Restaurants and Dining Options in Carolina Beach and Kure Beach</h3>
+        <p>
+          Pleasure Island is home to some of the area's favorite restaurants, including award winning seafood and locally sourced fare.  With options ranging from fresh oysters and peel-and-eat shrimp, to waterfront dining, breakfast diners, take-out, bistros, cafes, and sub shops plus yummy pizza, donuts, ice cream and fudge, Pleasure Island is a popular dining destination for area residents and visitors alike. During the off season many restaurants offer great deals for the locals.
+        </p><br>
+        <p>
+          Our Pleasure Island Chamber of Commerce members offer a wide range of dining options ideal for everyday residents and visitors to the island (from near or far!). Affordable meals for the family, romantic dining for couples, fun get-togethers with friends - we've got the place for you! Search our member directory to find the off season specials or add all your restaurant ideas to your Trip Planner Itinerary. You'll be sure to get the best of Where to Eat on Pleasure Island!
+        </p><br>
+      </article>
+      <section class="main-form">
+        <form class="left-form">
+          <h3>Search for Restaurants</h3>
+          <input type="checkbox" id="breakfast" name="breakfast" value="Breakfast">
+          <label for="breakfast">Breakfast</label><br>
+          <input type="checkbox" id="lunch" name="lunch" value="Lunch">
+          <label for="lunch">Lunch</label><br>
+          <input type="checkbox" id="dinner" name="dinner" value="Dinner">
+          <label for="dinner">Dinner</label><br>
+          <input type="checkbox" id="bar" name="bar" value="Bar">
+          <label for="bar">Bar/Pub</label><br>
+          <input type="checkbox" id="catering" name="catering" value="Catering">
+          <label for="catering">Catering</label><br><br>
+          <input class="submit" type="submit" value="Submit">
+        </form>       
+      </section>
+    </main>
+    <footer class="footer">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/discount.jpg" alt="">
+      </figure>
+      <div class="social">
+        <a href="https://www.facebook.com/PleasureIslandNC" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/PleasureIsland" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://pleasureislandchamber.blogspot.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

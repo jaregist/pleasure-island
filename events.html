@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Events</title>
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <a class="homelink" href="index.html">
+        <h1>Pleasure Island</h1>
+        <h2>Carolina & Kure Beach, NC</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="eat.html">Where to Eat</a></li>
+          <li><a href="play.html">Where to Play</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="business.html">Local Business</a></li>
+          <li><a class="active" href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+      <div class="hamburger-menu">
+        <a href="events.html" class="active">Events</a>
+        <div id="hamburger-menu-links">
+          <a href="index.html">Home</a>
+          <a href="eat.html">Where to Eat</a>
+          <a href="play.html">Where to Play</a>
+          <a href="stay.html">Where to Stay</a>
+          <a href="business.html">Local Businesses</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="event-main">
+      <h2 class="event-title">Events</h2>
+      <div class="event-article">
+        <p>
+          Events at Pleasure Island are renowned for great fun, great food, and a great experience of our local culture - all year round!  Residents, neighbors, and visitors attend Kure Beach and Carolina Beach events year after year, planning their calendars around big festivals including the Seafood Blues and Jazz Festival, the Beach Music Festival, or the Chowder Cook-Off. Be sure to check out Where to Stay, Where to Eat, Where to Play, and Local Businesses during your visit.  Hope to see you at an event soon!
+        </p><br>
+      </div>
+      <img class="event-img" src="images/beach_sparklers_1920w.jpg" alt="restaurant on the beach">
+      <aside class="event-list">
+        <h3>Main Events</h3>
+        <ul>
+          <li>
+            <a href="#">CHAMBER LIVE - Conversations with our Member Businesses</a><br>
+              July 24, 2020
+          </li>
+          <li>
+            <a href="#">Hurricane Preparedness - An Educational Webinar</a><br>
+            July 29, 2020
+          </li>
+          <li>
+            <a href="#">Covid-19 Updates</a><br>
+            December 16, 2020
+          </li>
+          <li>
+            <a href="#">Happy New Year 2021</a><br>
+            January 1, 2021
+          </li>
+          <li>
+            <a href="#">2021 New Hanover County Polar Plunge in Kure Beach</a><br>
+            February 20, 2020
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/discount.jpg" alt="">
+      </figure>
+      <div class="social">
+        <a href="https://www.facebook.com/PleasureIslandNC" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/PleasureIsland" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://pleasureislandchamber.blogspot.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

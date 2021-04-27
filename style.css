@@ -1,0 +1,371 @@
+/*---------------------------------------------------------
+  Mobile first/fallback styling
+----------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+header img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto !important;
+}
+
+body, footer {
+  font-family: 'Lato', sans-serif;
+  margin: 1em;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+}
+
+h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  padding-top: 1em;
+}
+
+header h1, header h2 {
+  text-align: center;
+  width: 100%;
+  background-color: #383961;
+  color: #f5f5f5;
+}
+
+.homelink {
+  text-decoration: none;
+}
+
+nav {
+  display: none;
+}
+
+
+/*hamburger menu -- will be hidden on larger screens*/
+.hamburger-menu {
+  overflow: hidden;
+  background-color: #fff275;
+  position: relative;
+}
+
+.hamburger-menu #hamburger-menu-links {
+  display: none;
+}
+
+.hamburger-menu .active {
+  background-color: #fff275;
+  color: #000000;
+}
+
+.hamburger-menu a {
+  color: #000000;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+}
+
+.hamburger-menu a.icon {
+  background: #fff275;
+  color: #000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hamburger-menu a:hover {
+  background-color: #383961;
+  color: #ffffff;
+}
+
+.hamburger-menu #hamburger-menu-links a:not(:last-child) {
+  border-bottom: 2px dashed black;
+}
+/*--------------------------------------------------------------*/
+
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  background-color: #fff275;
+  text-align: center;
+}
+
+nav li a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: .5em;
+}
+
+nav li a:hover {
+  background-color: #383961;
+  color: #f5f5f5;
+}
+
+.active {
+  background-color: #383961;
+  color: #f5f5f5;
+}
+
+.main-events, .event-list {
+  border: 1px solid black;
+  margin: 1em 0;
+  background-color: #fff275;
+}
+
+.main-events ul, .event-list ul {
+  list-style-type: none;
+}
+
+.main-events li, .event-list li {
+  padding: 1em;
+}
+
+.main, .eat-main, .play-main, .stay-main, .business-main, .event-main, .event-article {
+  margin: 1em;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form h3 {
+  width: 100%;
+}
+
+form h3 {
+  padding-bottom: 1em;
+}
+
+footer {
+  margin: 1em auto 0 auto;
+  width: 100%;
+  background-color: #383961;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer form, footer figure, footer .social {
+  padding: .5em 0 .5em 0;
+}
+
+.social {
+  font-size: 2em;
+}
+
+.fa-facebook {
+  color: #4267B2;
+  padding: 1em;
+}
+
+.fa-twitter-square {
+  color: #1DA1F2;
+  padding: 1em;
+}
+
+.fa-wordpress {
+  color: #000000;
+  padding: 1em;
+}
+
+/*---------------------------------------------------------
+  Grid layout for modern browsers and larger screens
+----------------------------------------------------------*/
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 664px) {
+    header h1 {
+      font-size: 5em;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 1.5em 1em;
+    }
+
+    .main-events {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+
+    .welcome {
+      grid-column: 2/3;
+    }
+
+    .hamburger-menu {
+      display: none;
+    }
+
+    nav {
+      display: block;
+    }
+
+    nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #fff275;
+    }
+    
+    nav li {
+      float: left;
+      font-weight: bold;
+    }
+    
+    nav li a {
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 1em;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      background-color: #383961;
+      color: #f5f5f5;
+    }
+
+    /*-------eat, play, stay, and business.html---------------*/
+    .eat-main, .play-main, .stay-main, .business-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    .main-title {
+      grid-column: 1/3;
+    }
+
+    .main-img {
+      grid-column: 1/2;
+      grid-row: 2;
+    }
+
+    .main-form {
+      grid-column: 2/3;
+      grid-row: 2;
+      font-weight: bold;
+      font-size: 1.25em;
+
+    }
+
+    .main-form h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .submit {
+      border: 4px solid #fff275;
+      background-color: #383961;
+      color: #f5f5f5;
+      padding: 1em 3em;
+      font-size: .75em;
+
+    }
+
+    .main-article {
+      grid-column: 1/3;
+      grid-row: 3;
+    }
+
+    .main-article p {
+      padding: 1em;
+    }
+    /*----------events.html grid styling-------------------*/
+    .event-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .event-title {
+      grid-column: 1/3;
+    }
+
+    .event-article {
+      grid-column: 1/2;
+    }
+
+    .event-list {
+      grid-column: 1/3;
+    }
+
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
+    /*-------eat, play, stay, business.html---------------*/
+    .main-form, .main-img {
+      grid-column: 2/3;
+      grid-row: 2;
+      color: #f5f5f5;
+    }
+
+    .main-article {
+      grid-column: 1/2;
+      grid-row: 2;
+    }
+
+    /*----------events.html grid styling-------------------*/
+    .event-list {
+      grid-column: 1/2;
+    }
+
+    .event-img {
+      grid-column: 2/3;
+      grid-row: 3;
+    }
+
+    .event-article {
+      grid-column: 1/3;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .welcome {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.25fr 2fr 1fr;
+    }
+
+    .welcome-title {
+      grid-column: 1/3;
+    }
+
+    .plan {
+      grid-column: 1/3;
+    }
+
+    .discover, .hometo {
+      margin-right: 1em;
+    }
+
+    .main-form {
+      text-shadow: 8px 1px 4px rgba(56,57,97,0.63);
+    }
+  }
+}

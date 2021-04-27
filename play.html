@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Where to Play</title>
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <a class="homelink" href="index.html">
+        <h1>Pleasure Island</h1>
+        <h2>Carolina & Kure Beach, NC</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="eat.html">Where to Eat</a></li>
+          <li><a class="active" href="play.html">Where to Play</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a href="business.html">Local Business</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+
+      <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+      <div class="hamburger-menu">
+        <a href="play.html" class="active">Where to Play</a>
+        <div id="hamburger-menu-links">
+          <a href="index.html">Home</a>
+          <a href="eat.html">Where to Eat</a>
+          <a href="stay.html">Where to Stay</a>
+          <a href="business.html">Local Businesses</a>
+          <a href="events.html">Events</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="play-main">
+      <h2 class="main-title">Where to Play</h2>
+      <img class="main-img" src="images/beach_golfing_1920w.jpg" alt="restaurant on the beach">
+      <article class="main-article">
+        <h3>Fun Things to Do in Carolina Beach and Kure Beach</h3>
+        <p>
+          Carolina Beach and Kure Beach on Pleasure Island, NC offer tons of attractions and fun things to do for visitors and residents of all ages. Come for a beach vacation or a weekend getaway, come for the fun events and festivals, and discover all the unique and wonderful attractions we have to offer.
+        </p><br>
+        <p>
+          Rent a charter boat for an amazing fishing experience, book a cruise to explore the Intracoastal Waterway, take a stand up paddle boarding (SUP) lesson, camp overnight oceanfront or in the Carolina Beach State Park, or spend an afternoon on one of our renowned golf courses just over the bridge. Check out the Boardwalk in Carolina Beach for great shopping, yummy food and treats, amusement rides, and free live music during the summer season. Or visit the renowned Kure Beach Pier for great fishing and gorgeous ocean views.
+        </p><br>
+        <p>
+          Search our Pleasure Island Chamber of Commerce member directory to find some of the area's most exciting and unique attractions and things to do. When you find something that sounds just right, add it to your Trip Planner Itinerary!
+        </p><br>
+      </article>
+      <section class="main-form">
+        <form>
+          <h3>Search for Something Fun To Do!</h3>
+          <input type="checkbox" id="activities" name="activities" value="Activities">
+          <label for="activities">Activities/Attractions</label><br>
+          <input type="checkbox" id="golf" name="golf" value="golf">
+          <label for="golf">Golf</label><br>
+          <input type="checkbox" id="water" name="water" value="Water">
+          <label for="water">Fishing/Boating</label><br>
+          <input type="checkbox" id="health" name="health" value="health">
+          <label for="health">Health/Wellness</label><br>
+          <input type="checkbox" id="drinks" name="drinks" value="drinks">
+          <label for="drinks">Breweries/Wineries</label><br><br>
+          <input class="submit" type="submit" value="Submit">
+        </form>       
+      </section>
+    </main>
+    <footer class="footer">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/discount.jpg" alt="">
+      </figure>
+      <div class="social">
+        <a href="https://www.facebook.com/PleasureIslandNC" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/PleasureIsland" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://pleasureislandchamber.blogspot.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

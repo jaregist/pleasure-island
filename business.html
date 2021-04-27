@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Local Business</title>
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <a class="homelink" href="index.html">
+        <h1>Pleasure Island</h1>
+        <h2>Carolina & Kure Beach, NC</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="eat.html">Where to Eat</a></li>
+          <li><a href="play.html">Where to Play</a></li>
+          <li><a href="stay.html">Where to Stay</a></li>
+          <li><a class="active" href="business.html">Local Business</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+            <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+      <div class="hamburger-menu">
+        <a href="business.html" class="active">Local Businesses</a>
+        <div id="hamburger-menu-links">
+          <a href="index.html">Home</a>
+          <a href="eat.html">Where to Eat</a>
+          <a href="play.html">Where to Play</a>
+          <a href="stay.html">Where to Stay</a>
+          <a href="events.html">Events</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="business-main">
+      <h2 class="main-title">Local Businesses</h2>
+      <img class="main-img" src="images/beach_business_open_1920w.jpg" alt="restaurant on the beach">
+      <article class="main-article">
+        <h3>Find Local Services in Carolina Beach, Kure Beach, and Pleasure Island</h3>
+        <p>
+          Pleasure Island NC and nearby Wilmington, New Hanover County, and Brunswick County offer a wealth of services from locally owned businesses to regional, national, and international brands. Whether your needs are for wedding planning resources, finding a beauty salon or gym, or seeking out a home builder, designer, doctor, or computer repair company, the businesses available through the Pleasure Island Chamber of Commerce member directory serve all these needs and more.
+        </p><br>
+        <p>
+          We invite you to seek out your professional service needs through our Chamber members.  These are dedicated, community minded businesses with the knowledge, experience, and care you deserve.  You'll find company profiles and information including contact info to help you learn more about their services.  Thank you for your interest in companies that support local economies!
+        </p><br>
+      </article>
+      <section class="main-form">        
+        <form>
+          <h3>Search for a Local Business</h3>
+          <input type="checkbox" id="financial" name="financial" value="Financial">
+          <label for="financial">Financial</label><br>
+          <input type="checkbox" id="realestate" name="realestate" value="Realestate">
+          <label for="realestate">Real Estate</label><br>
+          <input type="checkbox" id="healthcare" name="healthcare" value="healthcare">
+          <label for="healthcare">Health Care</label><br>
+          <input type="checkbox" id="retail" name="retail" value="retail">
+          <label for="retail">Retail</label><br>
+          <input type="checkbox" id="other" name="other" value="other">
+          <label for="other">Other</label><br><br>
+          <input class="submit" type="submit" value="Submit">
+        </form>       
+      </section>
+    </main>
+    <footer class="footer">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/discount.jpg" alt="">
+      </figure>
+      <div class="social">
+        <a href="https://www.facebook.com/PleasureIslandNC" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/PleasureIsland" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://pleasureislandchamber.blogspot.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>

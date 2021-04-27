@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Where to Stay</title>
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <a class="homelink" href="index.html">
+        <h1>Pleasure Island</h1>
+        <h2>Carolina & Kure Beach, NC</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="eat.html">Where to Eat</a></li>
+          <li><a href="play.html">Where to Play</a></li>
+          <li><a class="active" href="stay.html">Where to Stay</a></li>
+          <li><a href="business.html">Local Business</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      
+      <!--Hamburger Navigation Menu -- hidden on non-mobile screen sizing-->
+      <div class="hamburger-menu">
+        <a href="stay.html" class="active">Where to Stay</a>
+        <div id="hamburger-menu-links">
+          <a href="index.html">Home</a>
+          <a href="eat.html">Where to Eat</a>
+          <a href="play.html">Where to Play</a>
+          <a href="business.html">Local Businesses</a>
+          <a href="events.html">Events</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="stay-main">
+      <h2 class="main-title">Where to Stay</h2>
+      <img class="main-img" src="images/beach_hotel_1920w.jpg" alt="restaurant on the beach">
+      <article class="main-article">
+        <h3>Hotels, Rentals, and Campsites in Carolina Beach and Kure Beach</h3>
+        <p>
+          Carolina Beach and Kure Beach on Pleasure Island, NC offer diverse accommodations for every kind of visitor - family vacationers on a budget or out to splurge, couples or small group visitors, business travelers, students on spring break, surfers, honeymooners - you name it.  If you have a reason to visit, we have a place for you!
+        </p><br>
+        <p>
+          From camping on the beach or at the Carolina Beach State Park, to private, oceanfront rental properties and everything in between (including hotels, motels, and island real estate), our Pleasure Island Chamber of Commerce member directory will help you find the accommodations that best suit your travel plans and budget.  Simply search our directory to find the best match and add it to your Trip Planner Itinerary!
+        </p><br>
+      </article>
+      <section class="main-form">
+        <form>
+          <h3>Search for Hotels & Accommodations</h3>
+          <input type="checkbox" id="camping" name="camping" value="Camping">
+          <label for="camping">Camping/RV</label><br>
+          <input type="checkbox" id="rentals" name="rentals" value="Rentals">
+          <label for="rentals">Rentals</label><br>
+          <input type="checkbox" id="hotels" name="hotels" value="Hotels">
+          <label for="hotels">Hotels/Motels</label><br>
+          <input type="checkbox" id="oceanfront" name="oceanfront" value="Oceanfront">
+          <label for="oceanfront">Ocean Front</label><br>
+          <input type="checkbox" id="petfriendly" name="petfriendly" value="Petfriendly">
+          <label for="petfriendly">Petfriendly</label><br><br>
+          <input class="submit" type="submit" value="Submit">
+        </form>       
+      </section>
+    </main>
+    <footer class="footer">
+      <form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/discount.jpg" alt="">
+      </figure>
+      <div class="social">
+        <a href="https://www.facebook.com/PleasureIslandNC" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/PleasureIsland" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://pleasureislandchamber.blogspot.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hamburger-menu-links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>
